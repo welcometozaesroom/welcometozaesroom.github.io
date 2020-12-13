@@ -1,25 +1,103 @@
-import logo from './logo.svg';
+import React from 'react';
+import styled from 'styled-components'
 import './App.css';
+import RolloutItem from './components/RolloutItem';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faFacebook, 
+  faInstagram,
+  faTwitter,
+  faTiktok,
+  faSpotify,
+  faBandcamp,
+  faSoundcloud,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
+import {ReactComponent as AppleMusicLogo} from './assets/Apple_Music_Icon_blk.svg';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const StyledFaIcon = styled(FontAwesomeIcon)`
+  color: #FFFFFF;
+  margin: .4em;
+
+  &:hover {
+    color: ${props => props.color};
+  }
+`
+
+const StyledAppleMusicIcon = styled(AppleMusicLogo)`
+  fill: #FFFFFF;
+  margin: .4em;
+
+  &:hover {
+    fill: ${props => props.color};
+  }
+`
+
+const iconDimensions = {
+  width: '2.75em',
+  height: '2.75em',
 }
 
-export default App;
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Zae's Room Rollout</h1>
+        <h4>
+          "Zae's Room" will be released on February 12, 2021.
+          In the meantime, here's a one-stop shop for all the
+          stuff to keep y'all entertained until the album is out.
+          Enjoy :)
+        </h4>
+        <div>
+          <a href="https://www.facebook.com/zaemadethis" target="_blank" rel="noopener noreferrer">
+            <StyledFaIcon icon={faFacebook} color="#4267B2" style={iconDimensions} />
+          </a>
+          <a href="https://www.instagram.com/zaemadethis" target="_blank" rel="noopener noreferrer">
+            <StyledFaIcon icon={faInstagram} color="#E1306C" style={iconDimensions} />
+          </a>
+          <a href="https://www.twitter.com/zaemadethis" target="_blank" rel="noopener noreferrer">
+            <StyledFaIcon icon={faTwitter} color="#1DA1F2" style={iconDimensions} />
+          </a>
+          <a href="https://www.tiktok.com/@zaemadethis" target="_blank" rel="noopener noreferrer">
+            <StyledFaIcon icon={faTiktok} color="#000000" style={iconDimensions} />
+          </a>
+          <a href="https://open.spotify.com/artist/0idP6NmikrVzi8j9fDPIo6" target="_blank" rel="noopener noreferrer">
+            <StyledFaIcon icon={faSpotify} color="#1DB954" style={iconDimensions} />
+          </a>
+          <a href="https://music.apple.com/us/artist/isaiah-bullard/1422919410" target="_blank" rel="noopener noreferrer">
+            <StyledAppleMusicIcon style={iconDimensions} color="#FA57C1" />
+          </a>
+          <a href="https://isaiahbullard.bandcamp.com/" target="_blank" rel="noopener noreferrer">
+            <StyledFaIcon icon={faBandcamp} color="#629AA9" style={iconDimensions}/>
+          </a>
+          <a href="https://www.soundcloud.com/isaiah_bullard" target="_blank" rel="noopener noreferrer">
+            <StyledFaIcon icon={faSoundcloud} color="#FE5000" style={iconDimensions} />
+          </a>
+          <a href="https://www.youtube.com/channel/UCMMDfi3G5xXLj7vVqq9yr9w" target="_blank" rel="noopener noreferrer">
+            <StyledFaIcon icon={faYoutube} color="#FF0000" style={iconDimensions} />
+          </a>
+        </div>
+        <hr style={{width: '20%', minWidth: '100px', borderWidth: 2, borderColor: '#707070', borderStyle: 'solid'}} />
+        <RolloutItem
+          title="Release Date Announcement"
+          component={(
+            <iframe 
+              title="Zae's Room - Release Date Announcement!"
+              type="text/html"
+              style={{
+                width: '100%',
+                maxWidth: '560px',
+                height: '315px',
+                border: 0
+              }}
+              src="https://www.youtube.com/embed/OqbWpWoAoh0" 
+              allowFullScreen
+            />
+          )}
+        />
+      </div>
+    );
+  }
+}
