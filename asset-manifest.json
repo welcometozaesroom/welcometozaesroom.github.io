@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/welcometozaesroom.github.io/static/css/main.85612766.chunk.css",
-    "main.js": "/welcometozaesroom.github.io/static/js/main.bf7ff242.chunk.js",
-    "main.js.map": "/welcometozaesroom.github.io/static/js/main.bf7ff242.chunk.js.map",
-    "runtime-main.js": "/welcometozaesroom.github.io/static/js/runtime-main.e12fe3bb.js",
-    "runtime-main.js.map": "/welcometozaesroom.github.io/static/js/runtime-main.e12fe3bb.js.map",
-    "static/js/2.7089398b.chunk.js": "/welcometozaesroom.github.io/static/js/2.7089398b.chunk.js",
-    "static/js/2.7089398b.chunk.js.map": "/welcometozaesroom.github.io/static/js/2.7089398b.chunk.js.map",
-    "static/js/3.72663393.chunk.js": "/welcometozaesroom.github.io/static/js/3.72663393.chunk.js",
-    "static/js/3.72663393.chunk.js.map": "/welcometozaesroom.github.io/static/js/3.72663393.chunk.js.map",
-    "index.html": "/welcometozaesroom.github.io/index.html",
-    "static/css/main.85612766.chunk.css.map": "/welcometozaesroom.github.io/static/css/main.85612766.chunk.css.map",
-    "static/js/2.7089398b.chunk.js.LICENSE.txt": "/welcometozaesroom.github.io/static/js/2.7089398b.chunk.js.LICENSE.txt",
-    "static/media/Apple_Music_Icon_blk.74368bb7.svg": "/welcometozaesroom.github.io/static/media/Apple_Music_Icon_blk.74368bb7.svg"
+    "main.css": "/static/css/main.85612766.chunk.css",
+    "main.js": "/static/js/main.bf7ff242.chunk.js",
+    "main.js.map": "/static/js/main.bf7ff242.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83495760.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83495760.js.map",
+    "static/js/2.146a3d3c.chunk.js": "/static/js/2.146a3d3c.chunk.js",
+    "static/js/2.146a3d3c.chunk.js.map": "/static/js/2.146a3d3c.chunk.js.map",
+    "static/js/3.72663393.chunk.js": "/static/js/3.72663393.chunk.js",
+    "static/js/3.72663393.chunk.js.map": "/static/js/3.72663393.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.85612766.chunk.css.map": "/static/css/main.85612766.chunk.css.map",
+    "static/js/2.146a3d3c.chunk.js.LICENSE.txt": "/static/js/2.146a3d3c.chunk.js.LICENSE.txt",
+    "static/media/Apple_Music_Icon_blk.74368bb7.svg": "/static/media/Apple_Music_Icon_blk.74368bb7.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e12fe3bb.js",
-    "static/js/2.7089398b.chunk.js",
+    "static/js/runtime-main.83495760.js",
+    "static/js/2.146a3d3c.chunk.js",
     "static/css/main.85612766.chunk.css",
     "static/js/main.bf7ff242.chunk.js"
   ]
