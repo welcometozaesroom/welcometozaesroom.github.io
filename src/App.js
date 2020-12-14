@@ -1,8 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
 import './App.css';
 import RolloutItem from './components/RolloutItem';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faFacebook, 
   faInstagram,
@@ -13,31 +11,8 @@ import {
   faSoundcloud,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
-import {ReactComponent as AppleMusicLogo} from './assets/Apple_Music_Icon_blk.svg';
-
-
-const StyledFaIcon = styled(FontAwesomeIcon)`
-  color: #FFFFFF;
-  margin: .4em;
-
-  &:hover {
-    color: ${props => props.color};
-  }
-`
-
-const StyledAppleMusicIcon = styled(AppleMusicLogo)`
-  fill: #FFFFFF;
-  margin: .4em;
-
-  &:hover {
-    fill: ${props => props.color};
-  }
-`
-
-const iconDimensions = {
-  width: '2.75em',
-  height: '2.75em',
-}
+import { StyledFaIcon, StyledAppleMusicIcon, iconDimensions } from './constants'
+import SingleItem from './components/SingleItem';
 
 export default class App extends React.Component {
   render() {
@@ -79,9 +54,8 @@ export default class App extends React.Component {
             <StyledFaIcon icon={faYoutube} color="#FF0000" style={iconDimensions} />
           </a>
         </div>
-        <hr style={{width: '20%', minWidth: '100px', borderWidth: 2, borderColor: '#707070', borderStyle: 'solid'}} />
         <RolloutItem
-          title="Release Date Announcement"
+          title="Release Date Announcement!"
           component={(
             <iframe 
               title="Zae's Room - Release Date Announcement!"
@@ -94,6 +68,30 @@ export default class App extends React.Component {
               }}
               src="https://www.youtube.com/embed/OqbWpWoAoh0" 
               allowFullScreen
+            />
+          )}
+        />
+        <RolloutItem
+          title={"\"Evil Plan\" - Listen Here!"}
+          component={(
+            <SingleItem 
+              spotify="48Abax8tB9fYuzlviX0bUG"
+              apple="evil-plan-feat-louiev-t-fuze-single/1506525081"
+              bandcamp="evil-plan-feat-louiev-t-fuze"
+              soundcloud="evil-plan"
+              youtube="TDqCg3G_zxQ"
+            />
+          )}
+        />
+        <RolloutItem
+          title={"\"Big Thangs\" - Listen Here!"}
+          component={(
+            <SingleItem 
+              spotify="3D8y5cDAMeQ6UQHsN8TJr9"
+              apple="big-thangs-feat-coreyarnell-may/1502027667"
+              bandcamp="big-thangs-feat-coreyarnell-may"
+              soundcloud="big-thangs"
+              youtube="H9M8eZOEJ_E"
             />
           )}
         />
