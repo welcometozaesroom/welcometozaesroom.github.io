@@ -18,7 +18,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Zae's Room Rollout</h1>
+        <h1 style={{textDecorationLine: 'underline'}}>Zae's Room Rollout</h1>
         <h4>
           "Zae's Room" will be released on February 12, 2021.
           In the meantime, here's a one-stop shop for all the
@@ -54,6 +54,23 @@ export default class App extends React.Component {
             <StyledFaIcon icon={faYoutube} color="#FF0000" style={iconDimensions} />
           </a>
         </div>
+        <RolloutItem
+          title={`"The Holly Jolly Tape" - Listen Here!`}
+          component={(
+            <div>
+              <h4>If you like beat tapes, click below to listen to one! If you like me, click below to listen to my beat tape! If you like Christmas music, click below to listen to some! Merry Christmas and Happy Holidays!</h4>
+              <a href={`https://isaiahbullard.bandcamp.com/album/the-holly-jolly-tape`} target="_blank" rel="noopener noreferrer">
+                <StyledFaIcon icon={faBandcamp} color="#629AA9" style={iconDimensions}/>
+              </a>
+              <a href={`https://soundcloud.com/isaiah_bullard/sets/the-holly-jolly-tape`} target="_blank" rel="noopener noreferrer">
+                <StyledFaIcon icon={faSoundcloud} color="#FE5000" style={iconDimensions} />
+              </a>
+              <a href={`https://www.youtube.com/playlist?list=PLFzSU3ciTsEcmfB37W02rAgZRJumtB4F7`} target="_blank" rel="noopener noreferrer">
+                <StyledFaIcon icon={faYoutube} color="#FF0000" style={iconDimensions} />
+              </a>
+            </div>
+          )}
+        />
         <RolloutItem
           title={`"The Holly Jolly Tape" Re-Release Announcement!`}
           component={(
