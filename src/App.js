@@ -58,6 +58,18 @@ export default class App extends React.Component {
           title={`"The Holly Jolly Tape" - Listen Here!`}
           component={(
             <div>
+              <iframe 
+                title={`"The Holly Jolly Tape" Re-Release Drop Trailer`}
+                type="text/html"
+                style={{
+                  width: '100%',
+                  maxWidth: '560px',
+                  height: '315px',
+                  border: 0
+                }}
+                src="https://www.youtube.com/embed/lJcgnZHEM0s" 
+                allowFullScreen
+              />
               <h4>If you like beat tapes, click below to listen to one! If you like me, click below to listen to my beat tape! If you like Christmas music, click below to listen to some! Merry Christmas and Happy Holidays!</h4>
               <a href={`https://isaiahbullard.bandcamp.com/album/the-holly-jolly-tape`} target="_blank" rel="noopener noreferrer">
                 <StyledFaIcon icon={faBandcamp} color="#629AA9" style={iconDimensions}/>
