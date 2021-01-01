@@ -55,7 +55,7 @@ export default class App extends React.Component {
           </a>
         </div>
         <RolloutItem
-          title={`"Toy Box feat. Mark Pheonix, CoreyArnell & Phri" - Listen Here!`}
+          title={`"Toy Box (feat. Mark Pheonix, CoreyArnell & Phri)" - Listen Here!`}
           component={(
             <div>
               <iframe 
