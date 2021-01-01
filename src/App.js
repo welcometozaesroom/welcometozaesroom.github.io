@@ -59,7 +59,7 @@ export default class App extends React.Component {
           component={(
             <div>
               <iframe 
-                title={`"Toy Box" Drop Announcement!`}
+                title={`"Toy Box"`}
                 type="text/html"
                 style={{
                   width: '100%',
@@ -67,7 +67,7 @@ export default class App extends React.Component {
                   height: '315px',
                   border: 0
                 }}
-                src="https://www.youtube.com/embed/WlTCPCSOgFk" 
+                src="https://www.youtube.com/embed/2X1ON5fZRqA" 
                 allowFullScreen
               />
               <h4>Look at the cover art. We're sitting on top of a Rubik's cube...while I'm solving a Rubik's cube. Ain't that somthing? This track is the spirit of Zae's Room. 2021 is our year.</h4>
