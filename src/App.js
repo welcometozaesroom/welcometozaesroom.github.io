@@ -80,6 +80,10 @@ export default class App extends React.Component {
               <a href={`https://www.youtube.com/watch?v=2X1ON5fZRqA&feature=youtu.be`} target="_blank" rel="noopener noreferrer">
                 <StyledFaIcon icon={faYoutube} color="#FF0000" style={iconDimensions} />
               </a>
+              <br />
+              <a href={`https://blog.acrylicstyle.com/2021/01/isaiah-bullard-toy-box-feat-mark.html`} target="_blank" rel="noopener noreferrer" style={{color: "#000000"}}>
+                <h4>Check out the Acrylic Style feature for Toy Box HERE!</h4>
+              </a>
             </div>
           )}
         />
