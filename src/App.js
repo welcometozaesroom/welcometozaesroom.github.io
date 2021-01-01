@@ -55,6 +55,35 @@ export default class App extends React.Component {
           </a>
         </div>
         <RolloutItem
+          title={`"Toy Box feat. Mark Pheonix, CoreyArnell & Phri" - Listen Here!`}
+          component={(
+            <div>
+              <iframe 
+                title={`"Toy Box" Drop Announcement!`}
+                type="text/html"
+                style={{
+                  width: '100%',
+                  maxWidth: '560px',
+                  height: '315px',
+                  border: 0
+                }}
+                src="https://www.youtube.com/embed/WlTCPCSOgFk" 
+                allowFullScreen
+              />
+              <h4>Look at the cover art. We're sitting on top of a Rubik's cube...while I'm solving a Rubik's cube. Ain't that somthing? This track is the spirit of Zae's Room. 2021 is our year.</h4>
+              <a href={`https://isaiahbullard.bandcamp.com/track/toy-box-feat-mark-pheonix-coreyarnell-phri`} target="_blank" rel="noopener noreferrer">
+                <StyledFaIcon icon={faBandcamp} color="#629AA9" style={iconDimensions}/>
+              </a>
+              <a href={`https://soundcloud.com/isaiah_bullard/toy-box`} target="_blank" rel="noopener noreferrer">
+                <StyledFaIcon icon={faSoundcloud} color="#FE5000" style={iconDimensions} />
+              </a>
+              <a href={`https://www.youtube.com/watch?v=2X1ON5fZRqA&feature=youtu.be`} target="_blank" rel="noopener noreferrer">
+                <StyledFaIcon icon={faYoutube} color="#FF0000" style={iconDimensions} />
+              </a>
+            </div>
+          )}
+        />
+        <RolloutItem
           title={`"Toy Box" Release Date Announcement!`}
           component={(
             <iframe 
@@ -135,7 +164,7 @@ export default class App extends React.Component {
           )}
         />
         <RolloutItem
-          title={"\"Evil Plan\" - Listen Here!"}
+          title={"\"Evil Plan feat. LouieV T & FUZE\" - Listen Here!"}
           component={(
             <SingleItem 
               spotify="48Abax8tB9fYuzlviX0bUG"
@@ -147,7 +176,7 @@ export default class App extends React.Component {
           )}
         />
         <RolloutItem
-          title={"\"Big Thangs\" - Listen Here!"}
+          title={"\"Big Thangs feat. CoreyArnell & May\" - Listen Here!"}
           component={(
             <SingleItem 
               spotify="3D8y5cDAMeQ6UQHsN8TJr9"
