@@ -71,15 +71,13 @@ export default class App extends React.Component {
                 allowFullScreen
               />
               <h4>Look at the cover art. We're sitting on top of a Rubik's cube...while I'm solving a Rubik's cube. Ain't that somthing? This track is the spirit of Zae's Room. 2021 is our year.</h4>
-              <a href={`https://isaiahbullard.bandcamp.com/track/toy-box-feat-mark-pheonix-coreyarnell-phri`} target="_blank" rel="noopener noreferrer">
-                <StyledFaIcon icon={faBandcamp} color="#629AA9" style={iconDimensions}/>
-              </a>
-              <a href={`https://soundcloud.com/isaiah_bullard/toy-box`} target="_blank" rel="noopener noreferrer">
-                <StyledFaIcon icon={faSoundcloud} color="#FE5000" style={iconDimensions} />
-              </a>
-              <a href={`https://www.youtube.com/watch?v=2X1ON5fZRqA&feature=youtu.be`} target="_blank" rel="noopener noreferrer">
-                <StyledFaIcon icon={faYoutube} color="#FF0000" style={iconDimensions} />
-              </a>
+              <SingleItem 
+                spotify="04RE5S7el9EmnV6sDlGnQM"
+                apple="toy-box-feat-mark-pheonix-coreyarnell-phri-single/1547306457"
+                bandcamp="toy-box-feat-mark-pheonix-coreyarnell-phri-single"
+                soundcloud="toy-box"
+                youtube="2X1ON5fZRqA"
+              />
               <br />
               <a href={`https://blog.acrylicstyle.com/2021/01/isaiah-bullard-toy-box-feat-mark.html`} target="_blank" rel="noopener noreferrer" style={{color: "#000000"}}>
                 <h4>Check out the Acrylic Style feature for Toy Box HERE!</h4>
@@ -170,25 +168,53 @@ export default class App extends React.Component {
         <RolloutItem
           title={"\"Evil Plan feat. LouieV T & FUZE\" - Listen Here!"}
           component={(
-            <SingleItem 
-              spotify="48Abax8tB9fYuzlviX0bUG"
-              apple="evil-plan-feat-louiev-t-fuze-single/1506525081"
-              bandcamp="evil-plan-feat-louiev-t-fuze"
-              soundcloud="evil-plan"
-              youtube="TDqCg3G_zxQ"
-            />
+            <div>
+              <iframe 
+                title={`"Evil Plan"`}
+                type="text/html"
+                style={{
+                  width: '100%',
+                  maxWidth: '560px',
+                  height: '315px',
+                  border: 0
+                }}
+                src="https://www.youtube.com/embed/TDqCg3G_zxQ" 
+                allowFullScreen
+              />
+              <SingleItem 
+                spotify="48Abax8tB9fYuzlviX0bUG"
+                apple="evil-plan-feat-louiev-t-fuze-single/1506525081"
+                bandcamp="evil-plan-feat-louiev-t-fuze"
+                soundcloud="evil-plan"
+                youtube="TDqCg3G_zxQ"
+              />
+            </div>
           )}
         />
         <RolloutItem
           title={"\"Big Thangs feat. CoreyArnell & May\" - Listen Here!"}
           component={(
-            <SingleItem 
-              spotify="3D8y5cDAMeQ6UQHsN8TJr9"
-              apple="big-thangs-feat-coreyarnell-may/1502027667"
-              bandcamp="big-thangs-feat-coreyarnell-may"
-              soundcloud="big-thangs"
-              youtube="H9M8eZOEJ_E"
-            />
+            <div>
+              <iframe 
+                title={`"Big Thangs"`}
+                type="text/html"
+                style={{
+                  width: '100%',
+                  maxWidth: '560px',
+                  height: '315px',
+                  border: 0
+                }}
+                src="https://www.youtube.com/embed/H9M8eZOEJ_E" 
+                allowFullScreen
+              />
+              <SingleItem 
+                spotify="3D8y5cDAMeQ6UQHsN8TJr9"
+                apple="big-thangs-feat-coreyarnell-may/1502027667"
+                bandcamp="big-thangs-feat-coreyarnell-may"
+                soundcloud="big-thangs"
+                youtube="H9M8eZOEJ_E"
+              />
+            </div>
           )}
         />
       </div>
