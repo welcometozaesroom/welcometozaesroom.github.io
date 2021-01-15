@@ -55,6 +55,30 @@ export default class App extends React.Component {
           </a>
         </div>
         <RolloutItem
+          id="big-thangs-video"
+          title={`"Big Thangs" - Music Video!`}
+          component={(
+            <div>
+              <iframe 
+                title={`Isaiah Bullard - Big Thangs feat. CoreyArnell & May (Official Music Video)`}
+                type="text/html"
+                style={{
+                  width: '100%',
+                  maxWidth: '560px',
+                  height: '315px',
+                  border: 0
+                }}
+                src="https://www.youtube.com/embed/FIT_DhSPpyw" 
+                allowFullScreen
+              />
+              <a href={`#big-thangs`} style={{color: "#000000"}}>
+                <h4>Listen to "Big Thangs" on your favorite streaming platform HERE!</h4>
+              </a>
+            </div>
+          )}
+        />
+        <RolloutItem
+          id="toy-box"
           title={`"Toy Box (feat. Mark Pheonix, CoreyArnell & Phri)" - Listen Here!`}
           component={(
             <div>
@@ -86,23 +110,7 @@ export default class App extends React.Component {
           )}
         />
         <RolloutItem
-          title={`"Toy Box" Release Date Announcement!`}
-          component={(
-            <iframe 
-              title={`"Toy Box" Release Date Announcement!`}
-              type="text/html"
-              style={{
-                width: '100%',
-                maxWidth: '560px',
-                height: '315px',
-                border: 0
-              }}
-              src="https://www.youtube.com/embed/kvLiZ6QWkX0" 
-              allowFullScreen
-            />
-          )}
-        />
-        <RolloutItem
+          id="the-holly-jolly-tape"
           title={`"The Holly Jolly Tape" - Listen Here!`}
           component={(
             <div>
@@ -132,23 +140,7 @@ export default class App extends React.Component {
           )}
         />
         <RolloutItem
-          title={`"The Holly Jolly Tape" Re-Release Announcement!`}
-          component={(
-            <iframe 
-              title={`"The Holly Jolly Tape" Re-Release Announcement!`}
-              type="text/html"
-              style={{
-                width: '100%',
-                maxWidth: '560px',
-                height: '315px',
-                border: 0
-              }}
-              src="https://www.youtube.com/embed/nm_9lYWMjBk" 
-              allowFullScreen
-            />
-          )}
-        />
-        <RolloutItem
+          id="release-date"
           title="Release Date Announcement!"
           component={(
             <iframe 
@@ -166,6 +158,7 @@ export default class App extends React.Component {
           )}
         />
         <RolloutItem
+          id="evil-plan"
           title={"\"Evil Plan feat. LouieV T & FUZE\" - Listen Here!"}
           component={(
             <div>
@@ -192,6 +185,7 @@ export default class App extends React.Component {
           )}
         />
         <RolloutItem
+          id="big-thangs"
           title={"\"Big Thangs feat. CoreyArnell & May\" - Listen Here!"}
           component={(
             <div>
