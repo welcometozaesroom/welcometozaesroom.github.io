@@ -55,6 +55,29 @@ export default class App extends React.Component {
           </a>
         </div>
         <RolloutItem
+          id="meet-the-cast"
+          title={`Meet the Cast!`}
+          component={(
+            <div>
+              <iframe 
+                title={`Meet the Cast`}
+                type="text/html"
+                style={{
+                  width: '100%',
+                  maxWidth: '560px',
+                  height: '315px',
+                  border: 0
+                }}
+                src="https://www.youtube.com/embed/zKAu335n1c8" 
+                allowFullScreen
+              />
+              <a href={`#big-thangs`} style={{color: "#000000"}}>
+                <h4>Listen to "Big Thangs" on your favorite streaming platform HERE!</h4>
+              </a>
+            </div>
+          )}
+        />
+        <RolloutItem
           id="big-thangs-video"
           title={`"Big Thangs" - Music Video!`}
           component={(
