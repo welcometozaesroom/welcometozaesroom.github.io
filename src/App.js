@@ -71,9 +71,6 @@ export default class App extends React.Component {
                 src="https://www.youtube.com/embed/zKAu335n1c8" 
                 allowFullScreen
               />
-              <a href={`#big-thangs`} style={{color: "#000000"}}>
-                <h4>Listen to "Big Thangs" on your favorite streaming platform HERE!</h4>
-              </a>
             </div>
           )}
         />
