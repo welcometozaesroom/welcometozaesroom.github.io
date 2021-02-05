@@ -10,6 +10,7 @@ import {
   faBandcamp,
   faSoundcloud,
   faYoutube,
+  faAmazon
 } from '@fortawesome/free-brands-svg-icons';
 import { StyledFaIcon, StyledAppleMusicIcon, iconDimensions } from './constants'
 import SingleItem from './components/SingleItem';
@@ -54,6 +55,59 @@ export default class App extends React.Component {
             <StyledFaIcon icon={faYoutube} color="#FF0000" style={iconDimensions} />
           </a>
         </div>
+        <RolloutItem
+          id="meet-the-cast"
+          title={`Pre-Orders and Pre-Saves Available Now!`}
+          component={(
+            <div>
+              <h4>
+                Click the icon below to Pre-Order "Zae's Room" on iTunes and Amazon,
+                or Pre-Save the album on Spotify!
+              </h4>
+              <a href="https://music.apple.com/us/album/zaes-room/1550432322" target="_blank" rel="noopener noreferrer">
+                <StyledAppleMusicIcon style={iconDimensions} color="#FA57C1" />
+              </a>
+              <a href="https://www.amazon.com/Zaes-Room-Explicit-Isaiah-Bullard/dp/B08TTKW3T1" target="_blank" rel="noopener noreferrer">
+                <StyledFaIcon icon={faAmazon} color="#FF9900" style={iconDimensions} />
+              </a>
+              <iframe 
+                title="Pre-Save Link"
+                src="https://show.co/social-unlock/09aIDBInVP8YVqJ8w3Tvf7/widget"
+                style={{
+                  width: '100%',
+                  height: 300,
+                  border: 0
+                }}
+                width="100%"
+                height="300"
+                frameborder="0"
+              />
+              <a href={`https://show.co/gz1BOY2`} target="_blank" rel="noopener noreferrer" style={{color: "#000000"}}>
+                <h4>Or click here if the thing above doesn't work.</h4>
+              </a>
+            </div>
+          )}
+        />
+        <RolloutItem
+          id="meet-the-cast"
+          title={`Trailer & Track List!`}
+          component={(
+            <div>
+              <iframe 
+                title={`Zae's Room - Trailer & Track List`}
+                type="text/html"
+                style={{
+                  width: '100%',
+                  maxWidth: '560px',
+                  height: '315px',
+                  border: 0
+                }}
+                src="https://www.youtube.com/embed/SXgXyOkSOVw" 
+                allowFullScreen
+              />
+            </div>
+          )}
+        />
         <RolloutItem
           id="meet-the-cast"
           title={`Meet the Cast!`}
